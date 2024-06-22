@@ -1,6 +1,6 @@
-PWD /Users/naokimaekawa/Desktop/tech_try
+PWD /Users/naokimaekawa/Desktop/tech_try/gpt_try
 INPUT /usr/local/texlive/2023/texmf-var/web2c/luahbtex/lualatex.fmt
-INPUT /Users/naokimaekawa/Desktop/tech_try/gpt_try.tex
+INPUT /Users/naokimaekawa/Desktop/tech_try/gpt_try/gpt_try.tex
 OUTPUT gpt_try.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/lualatexquotejobname.lua
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ltluatex.lua

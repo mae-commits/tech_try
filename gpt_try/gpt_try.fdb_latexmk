@@ -1,6 +1,6 @@
 # Fdb version 4
-["lualatex"] 1715806163 "/Users/naokimaekawa/Desktop/tech_try/gpt_try.tex" "gpt_try.pdf" "gpt_try" 1715806164 0
-  "/Users/naokimaekawa/Desktop/tech_try/gpt_try.tex" 1715806162 2319 418e5b95ab8350446d99a5a7d7438bb8 ""
+["lualatex"] 1719037618 "/Users/naokimaekawa/Desktop/tech_try/gpt_try/gpt_try.tex" "gpt_try.pdf" "gpt_try" 1719037618 0
+  "/Users/naokimaekawa/Desktop/tech_try/gpt_try/gpt_try.tex" 1719037616 2319 418e5b95ab8350446d99a5a7d7438bb8 ""
   "/Users/naokimaekawa/Library/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1701093720 127327 0c22a2c7faa4e80fd8c3443dc8dd3208 ""
   "/Users/naokimaekawa/Library/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1701093723 128299 b151497b293cf2f51c7db1d2ff6e9c88 ""
   "/Users/naokimaekawa/Library/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1701093723 127670 710f0772a5cfcd2e057ee46ebf6eb610 ""
@@ -101,8 +101,8 @@
   "/usr/local/texlive/2023/texmf-dist/tex/luatex/luaotfload/luaotfload.lua" 1664913378 13565 83bac25a8cf8630acccd6a7f8bb9f791 ""
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1701092839 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/luahbtex/lualatex.fmt" 1701092788 11879227 429d82c5a1c642755f07c0c3d49cce5c ""
-  "gpt_try.aux" 1715806163 147 4c2e95beda0d8cc722403a8f6e6ca472 "lualatex"
-  "gpt_try.tex" 1715806162 2319 418e5b95ab8350446d99a5a7d7438bb8 ""
+  "gpt_try.aux" 1719037618 147 4c2e95beda0d8cc722403a8f6e6ca472 "lualatex"
+  "gpt_try.tex" 1719037616 2319 418e5b95ab8350446d99a5a7d7438bb8 ""
   (generated)
   "gpt_try.aux"
   "gpt_try.log"
