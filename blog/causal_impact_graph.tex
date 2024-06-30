@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{luatexja-preset}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usetikzlibrary{patterns}
+\setcounter{figure}{1}
+
+\begin{document}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Axes
+        \draw[->] (-0.5,0) -- (8,0) node[right] {時間};
+        \draw[->] (0,-0.5) -- (0,5) node[above] {結果};
+        
+        % Vertical dashed line for intervention time
+        \draw[dashed] (4,-0.5) -- (4,5) node[above] {介入時間};
+
+        % Prediction interval fill
+        \fill[orange,opacity=0.2] 
+            (4,1.2) .. controls (5,1.3) and (7,1.5) .. (8,1.8) 
+            -- (8,2.4) .. controls (7,2.1) and (5,1.9) .. (4,1.8) 
+            -- cycle;
+
+        % Actual data (using a bezier curve for smoothness)
+        \draw[black, thick] (0,0.5) .. controls (1,1) and (3,1.2) .. (4,1.5) node[midway, below left] {①};
+        \draw[black, thick] (4,1.5) .. controls (5,2) and (7,2.3) .. (8,2.5);
+
+        % Predicted data (using a dashed bezier curve)
+        \draw[red, thick, dashed] (4,1.5) .. controls (5,1.6) and (7,1.8) .. (8,2.1) node[midway, below] {②};
+
+        % Prediction interval lower bound (using a dotted bezier curve)
+        \draw[red, thick, dotted] (4,1.2) .. controls (5,1.3) and (7,1.5) .. (8,1.8) node[midway, below left] {③};
+
+        % Prediction interval upper bound (using a dotted bezier curve)
+        \draw[red, thick, dotted] (4,1.8) .. controls (5,1.9) and (7,2.1) .. (8,2.4) node[midway, above left] {④};
+
+        % Impact arrow
+        \draw[<->, thick, blue] (6,1.8) -- (6,2.1) node[midway, right] {⑤};
+    \end{tikzpicture}
+    \caption{CausalImpact 分析のグラフ}
+    \label{fig:causalimpact}
+\end{figure}
+
+\end{document}

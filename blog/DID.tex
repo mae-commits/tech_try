@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{luatexja-preset}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Axes
+        \draw[->] (-0.5,0) -- (5,0) node[right] {時間};
+        \draw[->] (0,-0.5) -- (0,5) node[above] {結果};
+        
+        % Vertical dashed line for treatment time
+        \draw[dashed] (2,-0.5) -- (2,5) node[above] {処置時間};
+    
+        % Pre-treatment period
+        \draw[black, thick] (0,0) -- (2,1) node[midway, below left] {①};
+        \draw[red, thick] (0,0) -- (2,2) node[midway, above left] {②};
+        
+        % Post-treatment period
+        \draw[black, thick] (2,1) -- (4,1.5) node[midway, below left] {③};
+        \draw[red, thick] (2,2) -- (4,4) node[midway, above left] {④};
+        
+        % Difference arrows
+        \draw[<->, thick] (2.2,1) -- (2.2,2) node[midway, right] {⑤};
+        \draw[<->, thick] (4.2,1.5) -- (4.2,4) node[midway, left] {⑥};
+        
+        % Dashed lines to indicate difference-in-differences
+        \draw[red, dashed] (2,2) -- (4,2.5);
+        
+        % Difference-in-Differences arrow
+        \draw[<->, thick] (4.5,2.5) -- (4.5,4) node[midway, right] {⑦};
+    \end{tikzpicture}
+    \caption{Difference-in-Differences (DID) メソッド。}
+    \label{fig:did}
+\end{figure}
+
+\end{document}
